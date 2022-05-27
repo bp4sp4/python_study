@@ -31,13 +31,15 @@
 
 '''
 이름 str 나이 int 성별(str 남|여로 입력) 키: float 몸무게 float
-
 홍길동은 27세 남자이고, 키는 186.5cm 몸무게는 72kg 입니다.
 '''
+
 name = str(input('이름:'))
 age = int(input('나이:'))
 gender = str(input('성별 [남/여] :'))
 stature = float(input('키:'))
 weight = float(input('몸무게:'))
-print(name,'은',age,'세',gender,'자이고','키는',stature,'cm','몸무게는',weight,'kg입니다')
+# print(name,'은',age,'세',gender,'자이고','키는',stature,'cm','몸무게는',weight,'kg입니다')
 
+print('{}은 {}세 {}자이고, 키는 {}cm 몸무게는 {}kg 입니다.'.format(name,age,gender,stature,weight))
+print('{0}은 {1}세 {2}자이고, 키는 {3}cm 몸무게는 {4}kg 입니다.'.format(name,age,gender,stature,weight))

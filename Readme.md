@@ -1,22 +1,30 @@
 <h1>2022-05-27</h1><br>
 <h3>PyCharm 2일차</h3>
+파이선에서 문자열 다루기
+chap03_str.py <br>
+(https://github.com/bp4sp4/python_study/blob/main/day2Project/chap03_str.py)
 
 * 변수 할당시 = (대입연산자) 사용함<br>
   * 대입연산자는 반드시 완쪽에는 변수를, 오른쪽에는 값 또는 계산식 위치함<br>
   * 값 = 변수 : 에러임<br>
-  * 숫자형으로 바꾸고자 한다면, 
-  * 정수는 int('정수문자'), 실수는 float('실수문자') 함수 사용함
-  * 파이선의 input() 함수로 입력되는 값은 모두 문자형(str) 이다.
-  * print('더하기 확인 :', num+100) # 숫자와 문자는 계산할 수 없음
+  * 파이선의 input() 함수로 입력되는 값은 모두 문자형(str)이다.
   * 숫자형으로 바꾸고자 한다면, 정수는 int('정수문자'), 실수는 float('실수문자') 사용함
   * 문자형으로 바꾸고자 한다면, str('문자') 사용함
  <pre>
 <code>
+error code
  * 100 = a <-- error <br>
- print('더하기 확인 :', num+100) <-- 숫자와 문자는 계산할 수 없음
+ print('더하기 확인 :', num+100) <-- error  숫자와 문자는 계산할 수 없음
+
+# f-string 포매팅 사용
+print(f'{custom_name}고객님의 사용금액은 {price}원, 발생 포인트는 {int(point)}')
+
+# format()사용
+print('현재 이용 하실수 있는 누적포인트는 {} 점입니다.'.format(total_point))
 </code>
 </pre>
-<hr>
+
+
 
 * 순수대입연산자
   + 합 대입 연산자 : 산술대입연산자가 주로 사용됨 
