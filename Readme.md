@@ -13,7 +13,7 @@
 pname = input('상품명 :')
 pamount = int(input('갯수 : '))
 
-print(pname, '제품을', pamount, '개 주문하였습니다', sep=' ')
+print(pname, '제품을', pamount, '개 주문하였습니다', sep='')
 print(f'{pname} 제품을 {pamount}개 주문 하였습니다.')
 print('%s 제품을 %d 개 주문하였습니다.' %(pname, pamount))
 print('{} 제품을 {} 개 주문하였습니다.'.format(pname,pamount))
