@@ -18,12 +18,12 @@ print(f'{pname} 제품을 {pamount}개 주문 하였습니다.')
 print('%s 제품을 %d 개 주문하였습니다.' %(pname, pamount))
 print('{} 제품을 {} 개 주문하였습니다.'.format(pname,pamount))
 
-# format() 사용시 값 적용 순서를 조정할 수도 있음
+format() 사용시 값 적용 순서를 조정할 수도 있음
 st1 = '이름은 {1}이고, 나이는 {2}세이고 혈액형은 {0}형입니다.'.format('B', '홍길동', 27)
 print(st1)
 
-# format() 안에서 값에 이름을 지정할 수 있음
-# 문장 안에 순번이 아닌 {이름}을 적용할 수도 있음
+format() 안에서 값에 이름을 지정할 수 있음
+문장 안에 순번이 아닌 {이름}을 적용할 수도 있음
 st2 = 'Today is {today}. Tomorrow is {tomorrow}.'.format(today='Monday', tomorrow='Tuseday')
 print(st2)
 
