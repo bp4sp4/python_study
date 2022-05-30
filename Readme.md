@@ -50,7 +50,7 @@ print(st2)
 <h1>2022-05-27</h1><br>
 
 <h3> Python 2일차</h3>
-[파이선에서 문자열 다루기](https://github.com/bp4sp4/python_study/blob/main/day2Project/chap03_str.py)<br>
+[문자열다루기](https://github.com/bp4sp4/python_study/blob/main/day2Project/chap03_str.py)<br>
 chap03_str.py 참고하여 공부
 
 * <h3>변수 할당시 = (대입연산자) 사용함</h3>
