@@ -1,10 +1,52 @@
+<h1>2022-05-30</h1>
+<h3> Python 3일차 </h3>
+
+<h3>문자열에 포맷(format) 적용해서 코드 작성 방법</h3>
+  * 문장(문자열)에 여러 종류의 값을 섞어서 적용하고자 할 떄 사용 함
+  * 포맷문자 이용 : %서식문자 (서식문자는 값타입에 따라 정해져 있음)
+  * 정수 : %d (decimal : 10진수), %o (octal : 8진수), %x(hex: 16진수
+  * 실수 : %f
+  * 문자열 : %s
+  * 기호 % 출력시에는 %%
+<pre>
+<code>
+pname = input('상품명 :')
+pamount = int(input('갯수 : '))
+
+print(pname, '제품을', pamount, '개 주문하였습니다', sep=' ')
+print(f'{pname} 제품을 {pamount}개 주문 하였습니다.')
+print('%s 제품을 %d 개 주문하였습니다.' %(pname, pamount))
+print('{} 제품을 {} 개 주문하였습니다.'.format(pname,pamount))
+
+# format() 사용시 값 적용 순서를 조정할 수도 있음
+st1 = '이름은 {1}이고, 나이는 {2}세이고 혈액형은 {0}형입니다.'.format('B', '홍길동', 27)
+print(st1)
+
+# format() 안에서 값에 이름을 지정할 수 있음
+# 문장 안에 순번이 아닌 {이름}을 적용할 수도 있음
+st2 = 'Today is {today}. Tomorrow is {tomorrow}.'.format(today='Monday', tomorrow='Tuseday')
+print(st2)
+
+</code>
+</pre>
+
+
+* <h3>자료형이란</h3>
+  * 파이선은 객체지향형 스크립트 언어이다.
+  * 자료형(값의 종류)은 객체와 레퍼런스로 관리됨
+  * 객체(object) : 클래스(class)로 만들어진 결과물(기억공간)
+  * 레퍼런스(reference) : 객체의 위치(주소) 정보를 가진 주소변수
+  * 객체(변수)가 가지는 값은 실행될 때 동적할당(allocation)되도록 되어 있음
+
+
 <h1>2022-05-27</h1><br>
-<h3>PyCharm 2일차</h3>
+
+<h3> Python 2일차</h3>
 파이선에서 문자열 다루기
 chap03_str.py <br>
-(https://github.com/bp4sp4/python_study/blob/main/day2Project/chap03_str.py)
+(https://github.com/bp4sp4/python_study/blob/main/day2Project/chap03_str.py) 참고하여 공부
 
-* 변수 할당시 = (대입연산자) 사용함<br>
+* <h3>변수 할당시 = (대입연산자) 사용함</h3>
   * 대입연산자는 반드시 완쪽에는 변수를, 오른쪽에는 값 또는 계산식 위치함<br>
   * 값 = 변수 : 에러임<br>
   * 파이선의 input() 함수로 입력되는 값은 모두 문자형(str)이다.
@@ -23,7 +65,6 @@ print(f'{custom_name}고객님의 사용금액은 {price}원, 발생 포인트�
 print('현재 이용 하실수 있는 누적포인트는 {} 점입니다.'.format(total_point))
 </code>
 </pre>
-
 
 
 * 순수대입연산자
