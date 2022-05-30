@@ -1,6 +1,14 @@
 <h1>2022-05-30</h1>
 <h3> Python 3일차 </h3>
 
+<h3>list 자료형 특징 : 리스트를 다루는 함수(메소드)들이 제공됨</h3>
+  * append() : 뒤에 추가
+  * insert() : 사이에 추가
+  * remove() : 값 삭제
+  * pop() : 꺼내면서 리스트에서 뺌
+  * reverse() : 리스트 안에 데이터 순서를 반대로 바꿈(뒤집기)
+  * clear() : 리스트 비움
+
 <h3>문자열에 포맷(format) 적용해서 코드 작성 방법</h3>
   * 문장(문자열)에 여러 종류의 값을 섞어서 적용하고자 할 떄 사용 함
   * 포맷문자 이용 : %서식문자 (서식문자는 값타입에 따라 정해져 있음)
@@ -42,9 +50,8 @@ print(st2)
 <h1>2022-05-27</h1><br>
 
 <h3> Python 2일차</h3>
-파이선에서 문자열 다루기
-chap03_str.py <br>
-(https://github.com/bp4sp4/python_study/blob/main/day2Project/chap03_str.py) 참고하여 공부
+[파이선에서 문자열 다루기](https://github.com/bp4sp4/python_study/blob/main/day2Project/chap03_str.py)<br>
+chap03_str.py 참고하여 공부
 
 * <h3>변수 할당시 = (대입연산자) 사용함</h3>
   * 대입연산자는 반드시 완쪽에는 변수를, 오른쪽에는 값 또는 계산식 위치함<br>
