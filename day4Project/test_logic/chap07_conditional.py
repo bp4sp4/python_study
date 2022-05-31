@@ -57,4 +57,10 @@ def func_logical():
 
     # and 연산자의 특징 :
     # 앞 and 뒤 : 앞이 False 이면 뒤를 실행 안 함
-    # 앞이 True 이면 
+    # 앞이 True 이면 뒤를 계산 실행함
+    print('a' and 'b') # 앞이 True 이므로 뒤를 실행해서 'b'가 출력됨
+    print('' and 'b') # 앞이 False 이므로 뒤를 실행 안 함
+
+    # or 연산자의 특징 :
+    # 앞 or 뒤 : 앞이 True 이면 뒤를 실행 안 함
+    print('a' or 'b') # 앞이 True 이므로 뒤 실행 안 함 'a' 출력
