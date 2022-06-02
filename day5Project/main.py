@@ -20,4 +20,4 @@
 
 import loop.loopMission as ls
 if __name__ == '__main__':
-        ls.practice1()
+        ls.for_sum()
