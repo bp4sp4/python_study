@@ -107,19 +107,16 @@ def test_iterable():
 # range(시작값(이상), 끝값(미만), 스텝(값의 간격 : 기본 1) 함수
 # range(끝값) => 예 > range(10) : 자동으로 시작값은 0부터  9까지 가능
 def test_range():
-    print(range(10))
+    print(range(10)) # range(0, 10)
+    lst = list(range(10))
+    print(lst) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# for 문 작성형식 3 : range() 연속 값을 인덱스로 이용
+def for_indexing():
+    # 리스트에 저장된 값 추출
+    list1 = ['apple', 90, [1,2,3], ('A', 'B', 'C')]
+    for data in list1:
+        print(data)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    # 리스트의 저장 값을 인덱스를 이용해서 연속 처리
+    for idx in range(len(list1)): #range(4) => range(0, 4)
+        print(f'인덱스{idx} 번째 : {list1[idx]}')

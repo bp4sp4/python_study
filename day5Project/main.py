@@ -14,6 +14,10 @@
 # # if __name__ == '__main__':
 #         cti.practice5()
 
-import loop.loopSample as ls
+# import loop.loopSample as ls
+# if __name__ == '__main__':
+#         ls.for_indexing()
+
+import loop.loopMission as ls
 if __name__ == '__main__':
-        ls.test_range()
+        ls.practice1()
