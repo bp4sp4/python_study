@@ -1,6 +1,72 @@
-<h1>2022-05-31</h1>
-<h3> Python 4일차 </h3>
+<h1>2022-06-02</h1>
+<h3> Python 5일차 </h3>
 
+<h3>제어문(처리문) : logic </h3>
+* 준비된 값의 계산 처리를 위해 사용되는 처리문장
+* 종류 : 조건문, 반복문, 분기문
+* 조건문 : 조건을 제시해서 결과가 참(True) | 거짓(False)이 나오게끔
+        해서 결과에 따라서 처리내용이 다르게 작동되게 하는 구문
+* 반복(loop)문 : 반복되는 구간을 루프(loop)라고 함 - if 문<br>
+        반복 실행할 구문(들)을 원하는 횟수 또는 종료조건이 될 떄까지<br>
+        반복 실행되게 작성하는 구문 - for 문, while 문
+* 분기문 : 실행 순서를 중간 생략시키거나, 강제로 종료시키는 구문
+        - continue 문, break 문
+<pre>
+<code>
+if 조건식 : 
+    조건식의 결과가 참(True) 일때 실행할 구문 (반드시 들여쓰기함)
+    실행할 구문은 여러 개여도 됨
+if (조건식) => 조건식은 ()로 묶어서 작성해도 됨
+    결과가 참일때 실행할 코드 구문등
+</code>
+</pre>
+[if문 실습문제](https://github.com/bp4sp4/python_study/tree/main/day5Project/Contional) ifMisson.py 확인
+
+<h1>2022-05-31</h1>
+
+<h3> Python 4일차 </h3>
+<h3>사전(dict) 자료형 </h3>
+* 자바의 Map 과 비슷하게 key 와 value 를 쌍으로 저장하는 구조임
+* dict 에서는 키는 변겨오디지 않는 값이어야 함 (키는 지정하면 변경할 수 없다.
+* => tuple 을 사용할 수 있음
+* dict에 저장하는 value는 모든 자료형 데이터 가능함
+
+<pre>
+<code>
+* dict 정의 방법 1 : dict() 함수 사용
+def test1():
+    dict1 =dict()
+    print(dict1, type(dict1))
+
+* dict 정의 방법 2 : {} 중괄호 사용
+def test2():
+    dict1 = {}
+    print(dict1, type(dict1))
+
+* dict 에 값 저장 방식 : 키 : 값 쌍으로 지정 표기함
+def test3():
+    dict1 = {'a' : 1, 'b':2, 'c':3}
+    print(dict1, type(dict1))
+
+* dict 내장함수 활용
+def test5():
+    dict1 = {
+        'a': 10,
+        'b': 25,
+        'c': 77
+    }
+    print('dict1:', dict1, type(dict1))
+
+    * 키에 대한 리스트 만들기 : keys() 함수
+    print('dict1 의 키 목록 :', dict1.keys())
+
+    * 값에 대한 리스트 만들기 : values()함수
+    print('dict1 의 값 목록', dict1.values())
+    * (키, 값) 을 item 이라고 함, 아이템을 리스트 만들기 : items() 함수
+    print('dict1 의 아이템 목록 :', dict1.items())
+</code>
+</pre>
+[내장함수 연습](https://github.com/bp4sp4/python_study/tree/main/day4Project/mission) 3개 파일 확인
 
 <h1>2022-05-30</h1>
 <h3> Python 3일차 </h3>
