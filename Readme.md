@@ -4,6 +4,7 @@
 <h4>에러의 종류</h4>
 
 func_sample.py 가져와야함
+fix
 
 <h1>2022-06-07</h1>
 <h3> Python 7일차 </h3>
