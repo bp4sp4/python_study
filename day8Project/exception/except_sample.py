@@ -82,7 +82,7 @@ def test_finally():
         # 예외 처리 구문 가장 마지막에 작성함
 # try 구동 -> 에러발생 -> except -> finally
 # try 구동 -> 정상처리 -> else -> finally
-
+#
 # 파이선에서의 예외처리 구문 조합 형태
 # try : ~ except: ~
 # try : ~ except: ~ else ~

@@ -1,10 +1,77 @@
+<span style="color:red">조금이라도 공부한거올리기</span>
 <h1>2022-06-08</h1>
 <h3> Python 8일차 </h3>
-<h3>예외 : 소스 코드로 해결할 수 있는 에러</h3>
-<h4>에러의 종류</h4>
+<h3>함수 정의 코드</h3>
+<pre>
+<code>
+함수 정의(함수 만들기)
+def sayHello():
+    # 반환값 없고 매개변수도 없는 함수임
+    print('안녕하세요.')
+    print('파이선에서 함수 만들기 확인')
+    return   # 반환값 없을때는 생략함
+</code>
+</pre>
+<span>함수 정리는 9일차와 함께 정리</span>
+<h3>예외 처리 소스 코드</h3>
+<pre>
+<code>
+def test_input_error2():
+    num = input('정수를 입력하세요')
+    try:
+        num = int(num) # 에러 발생 가능성이 있는 구문
+        print(num, type(num))
+    except:
+        print('정수만 입력해야 됩니다. 다시입력하세요')
 
-func_sample.py 가져와야함
-fix
+- 예외 처리시 except: 에 pass 를 사용하면
+- 오류 발생시 프로그램이 멈추지 않고 계속 동작되게 할 수 있음
+
+def except_pass():
+    lst = ['3', '예외처리', 4, 2, 67.5, 'python']
+    digit_num = []
+    print(lst)
+    # lst 에서 숫자만 골라내서 digit_num 에 기록 저장 처리
+    for idx in range(len(lst)):
+        try:
+            digit_num.append(int(lst[idx]))
+        except:
+            pass
+    print(digit_num)
+</code>
+</pre>
+* try 구동 -> 에러발생 -> except -> finally
+* try 구동 -> 정상처리 -> else -> finally
+<pre>
+<code>
+def test_except():
+    try:
+        print('try area')
+    else:
+        print('else area')
+</code>
+</pre>
+<h3>예외처리 구문 총정리 코드</h3>
+<pre>
+<code>
+def try_except():
+    lst = ['34', 'Hello', '4', 2, 47, 'apple']
+    try:
+        idx = int(input('조회할 순번 입력 : ')) - 정수가 아닌 값 입력시 에러 발생
+        print(f'{idx} 번째 요소는 {lst[idx]} 이다.') - 없는 순번에 대한 에러 발생
+    except IndexError as msg:
+        print('잘못된 인덱스입니다.', msg)
+    except ValueError as msg:
+        print('숫자만 입력해야합니다', msg)
+    except Exception as msg:
+        print('에러 발생 :', msg)
+    else:
+        print('try 쪽 구문들이 정상 실행되었음')
+    finally:
+        print('다중 예외 처리 테스트 종료')
+</code>
+</pre>
+[예외처리 미션 실습문제](https://github.com/bp4sp4/python_study/tree/main/day8Project/exception) mission1,2,3 확인
 
 <h1>2022-06-07</h1>
 <h3> Python 7일차 </h3>
