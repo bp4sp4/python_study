@@ -1,4 +1,35 @@
 <span style="color:red">조금이라도 공부한거올리기</span>
+<h1>2022-06-10</h1>
+<h3> Python 10일차 </h3>
+
+<h4>파이선에서 모듈 만들어서 사용하기</h4>
+* 모듈(module) : 파이선 소스 파일(파일명.py) 이다.
+* 파일명이 모듈명이 됨
+* 모듈용 소스파일에는 함수와 변수가 저장되면 됨
+* 모듈이 제공하는 함수와 변수를 사용하려면, import 모듈명 선언하면 됨
+* import 후에 모듈명,함수명() 또는 모듈명, 변수명 으로 사용하면 됨
+
+<pre>
+<code>
+import keyword <- keyword.py 파일을 의미함
+
+print(keyword.kwlist)  예약어 리스트 출력
+
+모듈은 다른 파이선 파일에서 사용할 수 있도록 함수(기능)와 변수(값)들을
+따로 저장해서 제공하는 목적의 소스 파일이다.
+
+모듈 임포트시에 모듈명에 대한 줄임말을 같이 선언할 수도 있음
+
+import keyword as k
+print(k.__file__)  해당 모듈(파일)의 위치가 출력됨
+</code>
+</pre>
+
+<h1>2022-06-09</h1>
+<h3> Python 9일차 </h3>
+
+[함수 실습문제](https://github.com/bp4sp4/python_study/tree/main/day8Project/exception) func_sample.py확인
+
 <h1>2022-06-08</h1>
 <h3> Python 8일차 </h3>
 <h3>함수 정의 코드</h3>
