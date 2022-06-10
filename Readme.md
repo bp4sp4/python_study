@@ -28,7 +28,7 @@ print(k.__file__)  해당 모듈(파일)의 위치가 출력됨
 <h1>2022-06-09</h1>
 <h3> Python 9일차 </h3>
 
-[함수 실습문제](https://github.com/bp4sp4/python_study/tree/main/day8Project/exception) func_sample.py확인
+[함수 실습문제](https://github.com/bp4sp4/python_study/blob/main/day9Project/adv_function/func_sample.py) func_sample.py확인
 
 <h1>2022-06-08</h1>
 <h3> Python 8일차 </h3>
